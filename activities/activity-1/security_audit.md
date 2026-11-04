@@ -12,7 +12,7 @@ The system allows an external vendor to upload data into cloud storage, which is
 ### Vulnerability 2: Hardcoded SAS Token
 **Location:** Script used to access the storage container.
 **Risk:** The SAS token is hardcoded into the script and has excessive permissions, including read, write and delete. It also expires in 2099. If someone obtains the token, they could access, modify or delete data without authorisation.
-**Severity:** High
+**Severity:** Critical 
 
 ### Vulnerability 3: Outdated TLS Encryption
 **Location:** HTTPS connection between the external vendor and cloud storage.
